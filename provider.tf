@@ -15,3 +15,8 @@ provider "azurerm" {
     client_secret = var.client_secret
     features {}
 }
+
+provider "azuread" {
+  # Configuration options
+    tenant_id = var.tenant_id
+}
