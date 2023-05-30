@@ -16,3 +16,8 @@ provider "azurerm" {
     features {}
 }
 
+provider "azuread" {
+  # Configuration options
+    tenant_id = var.tenant_id
+}
+

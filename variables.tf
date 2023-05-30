@@ -123,6 +123,7 @@ variable "vm_size" {
 }
 variable "local_admin_username" {
   type        = string
+  sensitive = true
   description = "local admin username"
 }
 variable "local_admin_password" {
