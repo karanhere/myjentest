@@ -10,7 +10,7 @@ resource "azurerm_virtual_desktop_host_pool" "terrahostpool" {
   custom_rdp_properties    = "audiocapturemode:i:1;audiomode:i:0;drivestoredirect:s:*;redirectclipboard:i:1"
   description              = "Hostpool Deployed via Terraform"
   type                     = "Pooled"
-  maximum_sessions_allowed = 6
+  maximum_sessions_allowed = 16
   load_balancer_type       = "BreadthFirst"
   /*scheduled_agent_updates {
     enabled = true
